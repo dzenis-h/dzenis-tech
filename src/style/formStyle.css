@@ -1,0 +1,267 @@
+/* Styling of the placholder elements - very specific approach */
+
+input[name="email"]::-webkit-input-placeholder,
+input[name="name"]::-webkit-input-placeholder,
+textarea[name="message"]::-webkit-input-placeholder {
+  color: #b39804;
+  font-family: "Roboto", cursive;
+  font-weight: 700;
+}
+
+input[name="company"]::-webkit-input-placeholder,
+input[name="phone"]::-webkit-input-placeholder {
+  color: grey;
+  font-family: "Roboto", cursive;
+  font-weight: 700;
+}
+
+#contact-form label {
+  font-family: "Cinzel", cursive;
+}
+
+/* Custom React toastify styles (overwritting existing ones) */
+.myToast {
+  color: #000;
+  font-family: "Cinzel", cursive;
+  font-weight: 600;
+}
+
+.Toastify__toast--warning {
+  font-family: "Cinzel", sans-serif;
+  color: black !important;
+  background: #e2e234 !important;
+}
+
+.Toastify__close-button {
+  color: #444 !important;
+}
+
+.Toastify__progress-bar {
+  background-color: #444 !important;
+  height: 6px !important;
+}
+
+.contact-container input:focus,
+.contact-container textarea:focus,
+.contact-container select:focus,
+.contact-container button:focus {
+  outline: 2px solid #b39804;
+}
+
+.contact-container .company-info .lead {
+  margin-bottom: 2rem;
+}
+
+.contact-container .company-info small {
+  color: #796703;
+}
+
+.contact-container label {
+  color: #fff;
+}
+
+.contact-container .contact-heading {
+  color: #fff;
+  letter-spacing: 2px;
+  margin: 0.2rem auto;
+}
+
+.contact-container .contact-plus {
+  color: #b39804;
+  letter-spacing: 1px;
+  margin-top: 0.2rem;
+  margin-bottom: 2rem;
+}
+
+.contact-container .contact-list {
+  display: inline-flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  height: 75%;
+  width: 256px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.xo {
+  display: grid;
+  width: 100%;
+}
+
+.contact-container ul li a {
+  background-color: #fff;
+  color: #000;
+  box-shadow: 0 5px 0 #000;
+  padding: 1em 1.5em;
+  position: relative;
+  text-decoration: none;
+  text-transform: uppercase;
+}
+
+.contact-container ul li a:hover {
+  background-color: #444;
+  color: #fff;
+  outline: 1;
+  transition: background-color 1300ms ease-out;
+}
+
+.contact-form-links-white {
+  background-color: #444 !important;
+  color: #fff !important;
+  box-shadow: 0 5px 0 #000;
+  padding: 1em 1.5em;
+  position: relative;
+  text-decoration: none;
+  text-transform: uppercase;
+}
+
+.contact-form-links-white:hover {
+  background-color: #fff !important;
+  color: #000 !important;
+}
+
+.contact-container ul li a:active {
+  box-shadow: none;
+  top: 5px;
+}
+
+.contact-container ul li i {
+  margin-right: 0.6rem;
+  font-size: 1.4em;
+}
+
+.contact-container ul li span {
+  text-transform: lowercase;
+  color: #eece1a;
+  cursor: default;
+  margin-left: 1.8rem;
+}
+
+/* ------------------------------------ */
+
+.contact-container {
+  max-width: 1170px;
+  margin-left: auto;
+  margin-right: auto;
+  padding: 1em;
+  margin: auto;
+}
+
+.contact-container ul {
+  list-style: none;
+  padding: 0;
+  margin: 1rem;
+}
+
+.contact-container ul li {
+  padding: 0.1rem;
+  margin: 0.4rem;
+}
+
+.contact-container .brand {
+  text-align: center;
+}
+
+.contact-container .brand span {
+  color: #fff;
+}
+
+.contact-container .wrapper {
+  box-shadow: 0 0 1rem 0 #eece1a;
+}
+
+.contact-container .wrapper > * {
+  padding: 1em;
+}
+
+.contact-container .company-info {
+  background: #eece1a;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.contact-container .company-info h3,
+.contact-container .company-info ul {
+  text-align: center;
+  margin: 0 0 1rem 0;
+}
+
+.contact-container .contact {
+  background: rgba(73, 73, 73, 0.5);
+  color: #eece1a;
+}
+
+/* FORM STYLES */
+.contact-container .contact form {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-gap: 20px;
+}
+
+.contact-container .contact form label {
+  display: block;
+}
+
+.contact-container .contact form p {
+  margin: 0;
+}
+
+.contact-container .contact form .full {
+  grid-column: 1 / 3;
+}
+
+.contact-container .contact form button,
+.contact-container .contact form input,
+.contact-container .contact form textarea {
+  width: 100%;
+  padding: 1em;
+  border: 1px solid #e2e234;
+}
+
+.contact-container .contact form button {
+  background: #e2e234;
+  border: 0;
+  text-transform: uppercase;
+  letter-spacing: 0.2em;
+  font-weight: bold;
+  cursor: pointer;
+}
+
+.contact-container .contact form button:hover,
+.contact-container .contact form button:focus {
+  background: rgb(0, 0, 0);
+  color: #eece1a;
+  outline: 1;
+  transition: background-color 1250ms ease-out;
+}
+
+/* LARGE SCREENS */
+@media (min-width: 700px) {
+  .contact-container .company-info .lead {
+    margin-bottom: 0;
+  }
+
+  .contact-container .wrapper {
+    display: grid;
+    grid-template-columns: 1fr 2fr;
+  }
+
+  .contact-container .wrapper > * {
+    padding: 2em;
+  }
+
+  .contact-container .company-info h3,
+  .contact-container .company-info ul,
+  .contact-container .brand {
+    text-align: left;
+  }
+}
+
+/* .contact-white-links {
+  background-color: whitesmoke;
+  color: #000;
+} */

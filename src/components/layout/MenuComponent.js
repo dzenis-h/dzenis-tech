@@ -72,9 +72,9 @@ const Menu = () => {
                   </Link>
                 </li>
                 <li className={navItems}>
-                  <Link to="/post" className="nav-link" onClick={toggleMenu}>
-                    Blog
-                  </Link>
+//                   <Link to="/post" className="nav-link" onClick={toggleMenu}>
+//                     Blog
+//                   </Link>
                 </li>
                 <li className={navItems}>
                   <Link to="/contact" className="nav-link" onClick={toggleMenu}>

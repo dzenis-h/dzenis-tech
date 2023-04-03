@@ -117,33 +117,14 @@ const Work = () => {
               Work
             </i>
           </h1>
-          <ModalVideo
+          {/* <ModalVideo
             ratio="21:9"
             channel="youtube"
             isOpen={videoOpen}
             videoId="5pUm2DWUgPM"
             onClose={() => setVideoOpen(false)}
-          />
+          /> */}
           <HighlightedHeader />
-          <div className="highlightedProject" style={{ marginBottom: "2rem" }}>
-            <div className="item">
-              {/* Removed 3rd party package and implemented React.lazy && Suspense */}
-              <Suspense fallback={<div className="loader"></div>}>
-                <ImageComponent
-                  webp={MarsEMS}
-                  jpg={MarsEMS_12}
-                  title="Mars EMS"
-                />
-              </Suspense>
-
-              <HighlightedApp
-                mainLink="https://mars-ems.herokuapp.com/index.html"
-                github="https://github.com/dzenis-h/Mars-EMS"
-              />
-            </div>
-            <HighlightedDescription />
-            <HighlightedList openVideo={() => setVideoOpen(true)} />
-          </div>
           <b
             className={
               darkMode === true
@@ -155,7 +136,7 @@ const Work = () => {
             <h4 className="work-heading-segments"> FULL STACK APPS</h4>
           </b>
           <div className="projects">
-            <div className="item">
+            {/* <div className="item">
               <Suspense fallback={<div className="loader"></div>}>
                 <ImageComponent
                   webp={Dev_Spot_5}
@@ -170,7 +151,7 @@ const Work = () => {
                 name="Dev_Spot"
                 description="It's a social network for developers 💻"
               />
-            </div>
+            </div> */}
 
             <div className="item">
               <Suspense fallback={<div className="loader"></div>}>
@@ -209,23 +190,6 @@ const Work = () => {
             <div className="item">
               <Suspense fallback={<div className="loader"></div>}>
                 <ImageComponent
-                  webp={BiggaFileUploads_2}
-                  jpg={BiggaFileUploads}
-                  title="Bigga File Uploads"
-                />
-              </Suspense>
-
-              <WrokTemplate
-                mainLink="https://mongo-share.herokuapp.com/"
-                github="https://github.com/dzenis-h/bigga_file_uploads"
-                name="Bigga File Uploads"
-                description="2 way data transfer of various file types w/ preview 🌀"
-              />
-            </div>
-
-            <div className="item">
-              <Suspense fallback={<div className="loader"></div>}>
-                <ImageComponent
                   webp={SpaceXLauncher_19}
                   jpg={SpaceXLauncher}
                   title="A small move from RESTful to GraphQL world"
@@ -253,7 +217,7 @@ const Work = () => {
               />
             </div>
 
-            <div className="item">
+            {/* <div className="item">
               <Suspense fallback={<div className="loader"></div>}>
                 <ImageComponent
                   webp={ReactiveContacts_24}
@@ -268,7 +232,7 @@ const Work = () => {
                 name="Reactive Contacts"
                 description="Add, remove, manipulate, and filter contacts. 📞"
               />
-            </div>
+            </div> */}
 
             <div className="item">
               <Suspense fallback={<div className="loader"></div>}>

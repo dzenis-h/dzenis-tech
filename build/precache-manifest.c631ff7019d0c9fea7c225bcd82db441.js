@@ -1,23 +1,23 @@
 self.__precacheManifest = [
   {
-    "revision": "2c9d9b473ad0af4665d8",
+    "revision": "4609fe95d6fe87a593f4",
     "url": "/static/css/main.16063f51.chunk.css"
   },
   {
-    "revision": "2c9d9b473ad0af4665d8",
-    "url": "/static/js/main.4b772e5f.chunk.js"
+    "revision": "4609fe95d6fe87a593f4",
+    "url": "/static/js/main.bb6f4782.chunk.js"
   },
   {
     "revision": "d20ec92773ad5df53a93",
     "url": "/static/js/runtime~main.59d98b02.js"
   },
   {
-    "revision": "72bd5722be3bfab0369f",
+    "revision": "ec7969643d8ee6579fd4",
     "url": "/static/css/2.ac72ace0.chunk.css"
   },
   {
-    "revision": "72bd5722be3bfab0369f",
-    "url": "/static/js/2.a1e0538c.chunk.js"
+    "revision": "ec7969643d8ee6579fd4",
+    "url": "/static/js/2.e479eaf6.chunk.js"
   },
   {
     "revision": "ea3fd166506179707962",
@@ -364,6 +364,10 @@ self.__precacheManifest = [
     "url": "/static/media/NoteAPP.ec52e804.jpg"
   },
   {
+    "revision": "cae9d5cdc1095f73cacd27b639ee6126",
+    "url": "/static/media/portrait_small.cae9d5cd.jpg"
+  },
+  {
     "revision": "3462283b64fa6105c069efbad9b44035",
     "url": "/static/media/background.3462283b.webp"
   },
@@ -372,15 +376,11 @@ self.__precacheManifest = [
     "url": "/static/media/portrait_small.682a4350.webp"
   },
   {
-    "revision": "cae9d5cdc1095f73cacd27b639ee6126",
-    "url": "/static/media/portrait_small.cae9d5cd.jpg"
-  },
-  {
     "revision": "2858dd3f717f3c6c7991c0b2def37c77",
     "url": "/static/media/background.2858dd3f.jpg"
   },
   {
-    "revision": "72088f02a90d8ff958a7fe668071ab93",
+    "revision": "8f0d3ff37c8ffce34f3f2db6230003b5",
     "url": "/index.html"
   }
 ];

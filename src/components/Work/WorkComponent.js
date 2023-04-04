@@ -188,23 +188,6 @@ const Work = () => {
 
             <div className="item">
               <Suspense fallback={<div className="loader"></div>}>
-                <ImageComponent
-                  webp={SpaceXLauncher_19}
-                  jpg={SpaceXLauncher}
-                  title="A small move from RESTful to GraphQL world"
-                />
-              </Suspense>
-
-              <WrokTemplate
-                mainLink="https://space-x.herokuapp.com"
-                github="https://github.com/dzenis-h/spaceX-launches"
-                name="SpaceX Launcher"
-                description="An app that interacts with the official SpaceX API 🚀"
-              />
-            </div>
-
-            <div className="item">
-              <Suspense fallback={<div className="loader"></div>}>
                 <ImageComponent webp={idea_X_9} jpg={idea_X} title="idea_x" />
               </Suspense>
 
@@ -579,11 +562,9 @@ const Work = () => {
                 mainLink="https://prototype-portfolio-1.web.app/"
                 github="https://github.com/dzenis-h/prototype-portfolio"
                 name="Portfolio prototype"
-                description="A prototype of a portfolio website. 🖥💻"
+                description="A prototype of a portfolio website. 🖥 💻"
               />
             </div>
-
-            <div />
 
             <div className="item">
               <Suspense fallback={<div className="loader"></div>}>
@@ -601,6 +582,25 @@ const Work = () => {
                 description="Add, remove, manipulate, and filter contacts. 📞"
               />
             </div>
+
+            <div className="item">
+              <Suspense fallback={<div className="loader"></div>}>
+                <ImageComponent
+                  webp={SpaceXLauncher_19}
+                  jpg={SpaceXLauncher}
+                  title="A small move from RESTful to GraphQL world"
+                />
+              </Suspense>
+
+              <WrokTemplate
+                mainLink="https://space-x.herokuapp.com"
+                github="https://github.com/dzenis-h/spaceX-launches"
+                name="SpaceX Launcher"
+                description="An app that interacts with the official SpaceX API 🚀"
+              />
+            </div>
+
+            <div />
 
             <div />
           </div>

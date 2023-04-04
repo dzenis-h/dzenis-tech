@@ -397,12 +397,30 @@ const Work = () => {
               </Suspense>
 
               <WrokTemplate
-                mainLink="https://reactive-feeds.web.app/"
+                mainLink="https://reactive-feeds.web.app"
                 github="https://github.com/dzenis-h/Reactive-RSS"
                 name="Reactive RSS"
                 description="Great way to add, save, edit, delete, follow your RSS feeds 📰"
               />
             </div>
+
+            <div className="item">
+              <Suspense fallback={<div className="loader"></div>}>
+                <ImageComponent
+                  webp={ReactiveRSS_17}
+                  jpg={ReactiveRSS}
+                  title="Reactive RSS"
+                />
+              </Suspense>
+
+              <WrokTemplate
+                mainLink="https://mybooks-2.web.app"
+                github="https://github.com/dzenis-h/myBooks"
+                name="Reactive RSS"
+                description="Great way to add, save, edit, delete, follow your RSS feeds 📰"
+              />
+            </div>
+
             <div className="item">
               <Suspense fallback={<div className="loader"></div>}>
                 <ImageComponent

@@ -32,7 +32,7 @@ import {
   NexterWebsite_14,
   NodeBookShop_15,
   //  ReactiveBurger_25,
-  // ReactiveContacts_24,
+  ReactiveContacts_24,
   ReactiveMovieDB_16,
   ReactiveRSS_17,
   ReactiveTube_18,
@@ -59,7 +59,7 @@ import {
   NexterWebsite,
   NodeBookShop,
   // ReactiveBurger,
-  // ReactiveContacts,
+  ReactiveContacts,
   ReactiveMovieDB,
   ReactiveRSS,
   ReactiveTube,
@@ -133,7 +133,7 @@ const Work = () => {
             }
           >
             {" "}
-            </b>
+          </b>
           <div className="projects">
             {/* <div className="item">
               <Suspense fallback={<div className="loader"></div>}>
@@ -585,7 +585,7 @@ const Work = () => {
 
             <div />
 
-            {/* <div className="item">
+            <div className="item">
               <Suspense fallback={<div className="loader"></div>}>
                 <ImageComponent
                   webp={ReactiveContacts_24}
@@ -595,12 +595,12 @@ const Work = () => {
               </Suspense>
 
               <WrokTemplate
-                mainLink="https://reactive-contact.herokuapp.com/"
+                mainLink="https://contact-reactive.herokuapp.com"
                 github="https://github.com/dzenis-h/Reactive-Contacts/tree/master"
                 name="Reactive Contacts"
                 description="Add, remove, manipulate, and filter contacts. 📞"
               />
-            </div> */}
+            </div>
 
             <div />
           </div>

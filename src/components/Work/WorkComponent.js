@@ -1,5 +1,5 @@
-import React, { useEffect, useState, Suspense } from "react";
-import ModalVideo from "react-modal-video";
+import React, { useEffect, Suspense } from "react";
+// import ModalVideo from "react-modal-video";
 
 import WrokTemplate from "./WrokTemplate";
 
@@ -9,16 +9,16 @@ import Toggle from "../darkMode/ToggleContainer";
 import { useTheme } from "../darkMode/useTheme";
 import { Wrapper } from "../darkMode/Wrapper";
 
-import HighlightedApp from "./Highlighted/HighlightedApp";
-import HighlightedDescription from "./Highlighted/HighlightedDescription";
-import HighlightedList from "./Highlighted/HighlightedList";
+// import HighlightedApp from "./Highlighted/HighlightedApp";
+// import HighlightedDescription from "./Highlighted/HighlightedDescription";
+// import HighlightedList from "./Highlighted/HighlightedList";
 
 import {
   BalkanRecipes_1,
-  BiggaFileUploads_2,
+  // BiggaFileUploads_2,
   CalorieTracker_3,
   ClientPanel_4,
-  Dev_Spot_5,
+  // Dev_Spot_5,
   Espro_27,
   evolWe1_7,
   evolWe2_6,
@@ -27,12 +27,12 @@ import {
   idea_X_9,
   //  ImageSearch_26,
   LoanCalculator2_11,
-  MarsEMS_12,
+  // MarsEMS_12,
   miniStories_13,
   NexterWebsite_14,
   NodeBookShop_15,
   //  ReactiveBurger_25,
-  ReactiveContacts_24,
+  // ReactiveContacts_24,
   ReactiveMovieDB_16,
   ReactiveRSS_17,
   ReactiveTube_18,
@@ -43,10 +43,10 @@ import {
   ReactiveOrders,
   //  =====================
   BalkanRecipes,
-  BiggaFileUploads,
+  // BiggaFileUploads,
   CalorieTracker,
   ClientPanel,
-  Dev_Spot,
+  // Dev_Spot,
   Espro,
   evolWe1,
   evolWe2,
@@ -54,12 +54,12 @@ import {
   HubFinder,
   idea_X,
   LoanCalculator2,
-  MarsEMS,
+  // MarsEMS,
   miniStories,
   NexterWebsite,
   NodeBookShop,
   // ReactiveBurger,
-  ReactiveContacts,
+  // ReactiveContacts,
   ReactiveMovieDB,
   ReactiveRSS,
   ReactiveTube,
@@ -85,7 +85,7 @@ import {
 const ImageComponent = React.lazy(() => import("../helper/ImageComponent"));
 
 const Work = () => {
-  const [videoOpen, setVideoOpen] = useState(false);
+  // const [videoOpen, setVideoOpen] = useState(false);
 
   useEffect(() => {
     document.title = "My work"; // making the document title dynamic
@@ -133,8 +133,7 @@ const Work = () => {
             }
           >
             {" "}
-            <h4 className="work-heading-segments"> FULL STACK APPS</h4>
-          </b>
+            </b>
           <div className="projects">
             {/* <div className="item">
               <Suspense fallback={<div className="loader"></div>}>
@@ -180,7 +179,7 @@ const Work = () => {
               </Suspense>
 
               <WrokTemplate
-                mainLink="https://the-mern-shop.herokuapp.com"
+                mainLink="https://mern-shop.herokuapp.com"
                 github="https://github.com/dzenis-h/MERN_Shop"
                 name="The MERN Shop"
                 description="eCommerce project built using the MERN stack 💲🖥"
@@ -197,7 +196,7 @@ const Work = () => {
               </Suspense>
 
               <WrokTemplate
-                mainLink="https://spacex-2020.herokuapp.com"
+                mainLink="https://space-x.herokuapp.com"
                 github="https://github.com/dzenis-h/spaceX-launches"
                 name="SpaceX Launcher"
                 description="An app that interacts with the official SpaceX API 🚀"
@@ -210,29 +209,12 @@ const Work = () => {
               </Suspense>
 
               <WrokTemplate
-                mainLink="https://idea.herokuapp.com"
+                mainLink="https://idea-x.herokuapp.com"
                 github="https://github.com/dzenis-h/IDEA_x"
                 name="idea_X"
                 description="Save ideas for your next coding project 💡"
               />
             </div>
-
-            {/* <div className="item">
-              <Suspense fallback={<div className="loader"></div>}>
-                <ImageComponent
-                  webp={ReactiveContacts_24}
-                  jpg={ReactiveContacts}
-                  title="Add, remove, manipulate, and filter contacts."
-                />
-              </Suspense>
-
-              <WrokTemplate
-                mainLink="https://reactive-contact.herokuapp.com/"
-                github="https://github.com/dzenis-h/Reactive-Contacts/tree/master"
-                name="Reactive Contacts"
-                description="Add, remove, manipulate, and filter contacts. 📞"
-              />
-            </div> */}
 
             <div className="item">
               <Suspense fallback={<div className="loader"></div>}>
@@ -244,32 +226,13 @@ const Work = () => {
               </Suspense>
 
               <WrokTemplate
-                mainLink="https://node-book-shop.herokuapp.com"
+                mainLink="https://node-books.herokuapp.com"
                 github="https://github.com/dzenis-h/node-book-shop-2.0"
                 name="Node Book Shop"
                 description="A prototype of an online store for selling and buying books 📚🛒"
               />
             </div>
-          </div>
-          {/* xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx */}
-          {/* SPAs */}
-          <br />
-          <b>
-            <p
-              className="break-line"
-              style={{ textDecoration: "underline" }}
-            ></p>
-            <span
-              className={
-                darkMode === true
-                  ? "diff-projects diff-projects-black"
-                  : "diff-projects diff-projects-white"
-              }
-            >
-              <h4 className="work-heading-segments">Single Page Apps (SPA)</h4>
-            </span>
-          </b>
-          <div className="projects">
+
             <div className="item">
               <Suspense fallback={<div className="loader"></div>}>
                 <ImageComponent
@@ -285,7 +248,6 @@ const Work = () => {
                 description="React-Redux app that uses YouTube API 🎦"
               ></WrokTemplate>
             </div>
-
             <div className="item">
               <Suspense fallback={<div className="loader"></div>}>
                 <ImageComponent
@@ -302,7 +264,6 @@ const Work = () => {
                 description="eCommerce prototype app made with Angular 🏀"
               />
             </div>
-
             <div className="item">
               <Suspense fallback={<div className="loader"></div>}>
                 <ImageComponent
@@ -319,7 +280,6 @@ const Work = () => {
                 description="Notes app build with pure HTML5, CSS3, vanilla JS (ES6+) 📝📙"
               />
             </div>
-
             <div className="item">
               <Suspense fallback={<div className="loader"></div>}>
                 <ImageComponent
@@ -336,7 +296,6 @@ const Work = () => {
                 description="Estimated payments for loan amounts, interest rates and terms 📊"
               />
             </div>
-
             <div className="item">
               <Suspense fallback={<div className="loader"></div>}>
                 <ImageComponent
@@ -353,7 +312,6 @@ const Work = () => {
                 description="A prototype for search images by using unsplah API. 📷"
               />
             </div>
-
             <div className="item">
               <Suspense fallback={<div className="loader"></div>}>
                 <ImageComponent
@@ -370,7 +328,6 @@ const Work = () => {
                 description="A prototype meals ordering app made with React. 🥗"
               />
             </div>
-
             <div className="item">
               <Suspense fallback={<div className="loader"></div>}>
                 <ImageComponent
@@ -387,7 +344,6 @@ const Work = () => {
                 description="Simple app for bookmarking your favourite websites. ✔"
               />
             </div>
-
             <div className="item">
               <Suspense fallback={<div className="loader"></div>}>
                 <ImageComponent webp={iZEN_10} jpg={iZen} title="iZEN" />
@@ -400,7 +356,6 @@ const Work = () => {
                 description="Nice relaxing sounds & visuals to help you calm down 🧘‍"
               />
             </div>
-
             <div className="item">
               <Suspense fallback={<div className="loader"></div>}>
                 <ImageComponent
@@ -417,7 +372,6 @@ const Work = () => {
                 description="A web app made for a local coffee shop. ☕"
               />
             </div>
-
             <div className="item">
               <Suspense fallback={<div className="loader"></div>}>
                 <ImageComponent
@@ -434,7 +388,6 @@ const Work = () => {
                 description="React app that uses the GitHub API to find details about its users. 🔎"
               />
             </div>
-
             <div className="item">
               <Suspense fallback={<div className="loader"></div>}>
                 <ImageComponent
@@ -451,7 +404,6 @@ const Work = () => {
                 description="Search users info by name, surname or company 👀"
               />
             </div>
-
             <div className="item">
               <Suspense fallback={<div className="loader"></div>}>
                 <ImageComponent
@@ -468,7 +420,6 @@ const Work = () => {
                 description="Great way to add, save, edit, delete, follow your RSS feeds 📰"
               />
             </div>
-
             <div className="item">
               <Suspense fallback={<div className="loader"></div>}>
                 <ImageComponent
@@ -485,7 +436,6 @@ const Work = () => {
                 description="Collect recipes and organize your shopping list 🥗"
               />
             </div>
-
             <div className="item">
               <Suspense fallback={<div className="loader"></div>}>
                 <ImageComponent
@@ -502,7 +452,6 @@ const Work = () => {
                 description=" Add clients, check/ change their balances, etc. 💶"
               />
             </div>
-
             <div className="item">
               <Suspense fallback={<div className="loader"></div>}>
                 <ImageComponent
@@ -519,7 +468,6 @@ const Work = () => {
                 description="Track your calories and save data into LS 🍏"
               />
             </div>
-
             <div className="item">
               <Suspense fallback={<div className="loader"></div>}>
                 <ImageComponent
@@ -536,20 +484,7 @@ const Work = () => {
                 description="A fast and beautiful web app that uses the TMDb API 🎬"
               />
             </div>
-          </div>
-          {/* xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx */}
-          {/* WEB SITES */}
-          <br />
-          <b
-            className={
-              darkMode === true
-                ? "diff-projects diff-projects-black"
-                : "diff-projects diff-projects-white"
-            }
-          >
-            <h4 className="work-heading-segments">WEB SITES</h4>
-          </b>
-          <div className="projects">
+
             <div className="item">
               <Suspense fallback={<div className="loader"></div>}>
                 <ImageComponent
@@ -648,7 +583,26 @@ const Work = () => {
               />
             </div>
 
-            {/* ''''''''''''''''''''''''''''' */}
+            <div />
+
+            {/* <div className="item">
+              <Suspense fallback={<div className="loader"></div>}>
+                <ImageComponent
+                  webp={ReactiveContacts_24}
+                  jpg={ReactiveContacts}
+                  title="Add, remove, manipulate, and filter contacts."
+                />
+              </Suspense>
+
+              <WrokTemplate
+                mainLink="https://reactive-contact.herokuapp.com/"
+                github="https://github.com/dzenis-h/Reactive-Contacts/tree/master"
+                name="Reactive Contacts"
+                description="Add, remove, manipulate, and filter contacts. 📞"
+              />
+            </div> */}
+
+            <div />
           </div>
         </main>
       </Wrapper>

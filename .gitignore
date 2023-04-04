@@ -40,3 +40,4 @@ debug.log*
 .env
 
 blog/node_modules
+node_modules

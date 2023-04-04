@@ -13,7 +13,7 @@ const HighlightedHeader = () => {
               ? "work-subtitle white specialFont bold textShadow"
               : "work-subtitle black specialFont bold textShadow"
           }
-          style={{fontSize: "1.1rem"}}
+          style={{ fontSize: "1.1rem" }}
         >
           I develop software every day. Below is a shortened and adapted list of
           my projects/prototypes:{" "}

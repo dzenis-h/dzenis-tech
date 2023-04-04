@@ -3,10 +3,10 @@ import React, { useEffect, useContext } from "react";
 import { LangContext } from "../assets/locales/LangContext";
 import { obj } from "../assets/locales/words";
 
-import CV from "../assets/documents/Performance Profile.pdf";
+// import CV from "../assets/documents/Performance Profile.pdf";
 
 import IconButton from "@material-ui/core/IconButton";
-import Typography from "@material-ui/core/Typography";
+// import Typography from "@material-ui/core/Typography";
 import MenuItem from "@material-ui/core/MenuItem";
 import Select from "@material-ui/core/Select";
 
@@ -26,7 +26,7 @@ const Home = (props) => {
   }, []);
 
   const { lang, changeLang } = useContext(LangContext);
-  const { position, profile } = obj[lang];
+  const { position } = obj[lang];
 
   return (
     <>

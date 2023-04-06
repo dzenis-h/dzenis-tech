@@ -158,6 +158,7 @@ input[name="phone"]::-webkit-input-placeholder {
 .contact-container ul li {
   padding: 0.1rem;
   margin: 0.4rem;
+  background: #000;
 }
 
 .contact-container .brand {

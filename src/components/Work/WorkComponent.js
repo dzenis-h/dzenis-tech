@@ -1,4 +1,8 @@
-import React, { useEffect, Suspense } from "react";
+import React, { useEffect, Suspense, useContext } from "react";
+import Navbar from "../../components/layout/Navbar";
+import { LangContext } from "../../assets/locales/LangContext";
+import { obj } from "../../assets/locales/words";
+
 // import ModalVideo from "react-modal-video";
 
 import WrokTemplate from "./WrokTemplate";
@@ -14,7 +18,6 @@ import { Wrapper } from "../darkMode/Wrapper";
 // import HighlightedList from "./Highlighted/HighlightedList";
 
 import {
-  BalkanRecipes_1,
   // BiggaFileUploads_2,
   CalorieTracker_3,
   ClientPanel_4,
@@ -93,6 +96,37 @@ const Work = () => {
 
   const themeState = useTheme();
   const darkMode = localStorage.getItem("dark");
+  const { lang } = useContext(LangContext);
+  const {
+    miniStories_1,
+    TheMERNShop_1,
+    idea_X_1,
+    NodeBookShop_1,
+    ReactiveTube_1,
+    BalkanSportsStore_1,
+    NotesX_1,
+    LoanCalculator_1,
+    ImageSearch_1,
+    ReactiveOrders_1,
+    iBookmark_1,
+    iZEN_1,
+    Espro_1,
+    HubFinder_1,
+    DataSearch_1,
+    ReactiveRSS_1,
+    BalkanRecipes_1,
+    ClientPanel_1,
+    CalorieTracker_1,
+    ReactiveMovies_1,
+    Nexter_1,
+    evolWe2_1,
+    HotelXO_1,
+    evolWE1_1,
+    BiggaPublishing_1,
+    PortfolioPrototype_1,
+    ReactiveContacts_1,
+    SpaceXLauncher_1,
+  } = obj[lang];
 
   return (
     <div>
@@ -101,6 +135,9 @@ const Work = () => {
           id="work"
           className={darkMode === "true" ? "dark-theme" : "white-theme"}
         >
+          <div style={{ disply: "flex", textAlign: "center" }}>
+            <Navbar />
+          </div>
           <Toggle toggleTheme={themeState} theme={themeState.dark}></Toggle>{" "}
           <h1 className="lg-heading textShadow">
             <span className={darkMode === "true" ? "white" : "heading-about"}>
@@ -165,7 +202,7 @@ const Work = () => {
                 mainLink="https://mini-stories.herokuapp.com"
                 github="https://github.com/dzenis-h/mini-stories"
                 name="miniStories"
-                description="A mini social network site with many extras 📗"
+                description={miniStories_1}
               />
             </div>
 
@@ -182,7 +219,7 @@ const Work = () => {
                 mainLink="https://mern-shop.herokuapp.com"
                 github="https://github.com/dzenis-h/MERN_Shop"
                 name="The MERN Shop"
-                description="eCommerce project built using the MERN stack 💲🖥"
+                description={TheMERNShop_1}
               />
             </div>
 
@@ -195,7 +232,7 @@ const Work = () => {
                 mainLink="https://idea-x.herokuapp.com"
                 github="https://github.com/dzenis-h/IDEA_x"
                 name="idea_X"
-                description="Save ideas for your next coding project 💡"
+                description={idea_X_1}
               />
             </div>
 
@@ -212,7 +249,7 @@ const Work = () => {
                 mainLink="https://node-books.herokuapp.com"
                 github="https://github.com/dzenis-h/node-book-shop-2.0"
                 name="Node Book Shop"
-                description="A prototype of an online store for selling and buying books 📚🛒"
+                description={NodeBookShop_1}
               />
             </div>
 
@@ -228,7 +265,7 @@ const Work = () => {
                 mainLink="https://reactive-tube-2.web.app/"
                 github="https://github.com/dzenis-h/Reactive-tube"
                 name="Reactive Tube"
-                description="React-Redux app that uses YouTube API 🎦"
+                description={ReactiveTube_1}
               ></WrokTemplate>
             </div>
             <div className="item">
@@ -244,7 +281,7 @@ const Work = () => {
                 mainLink="https://balkan-sport.web.app"
                 github="https://github.com/dzenis-h/Balkan-Sports-Store"
                 name="Balkan Sports Store"
-                description="eCommerce prototype app made with Angular 🏀"
+                description={BalkanSportsStore_1}
               />
             </div>
             <div className="item">
@@ -260,7 +297,7 @@ const Work = () => {
                 mainLink="https://notes-project-2022.web.app"
                 github="https://github.com/dzenis-h/notes-app"
                 name="NotesX"
-                description="Notes app build with pure HTML5, CSS3, vanilla JS (ES6+) 📝📙"
+                description={NotesX_1}
               />
             </div>
             <div className="item">
@@ -276,7 +313,7 @@ const Work = () => {
                 mainLink="https://web-loan-calculator.web.app"
                 github="https://github.com/dzenis-h/Loan-Calculator-2.0"
                 name="Loan Calculator 2.0"
-                description="Estimated payments for loan amounts, interest rates and terms 📊"
+                description={LoanCalculator_1}
               />
             </div>
             <div className="item">
@@ -292,7 +329,7 @@ const Work = () => {
                 mainLink="https://coding-challenge-2022.web.app"
                 github="https://github.com/dzenis-h/coding-challenge"
                 name="Image Search App"
-                description="A prototype for search images by using unsplah API. 📷"
+                description={ImageSearch_1}
               />
             </div>
             <div className="item">
@@ -308,7 +345,7 @@ const Work = () => {
                 mainLink="https://reactive-order.vercel.app/"
                 github="https://github.com/dzenis-h/reactive-order"
                 name="Reactive Orders"
-                description="A prototype meals ordering app made with React. 🥗"
+                description={ReactiveOrders_1}
               />
             </div>
             <div className="item">
@@ -324,7 +361,7 @@ const Work = () => {
                 mainLink="https://ibookmark-app.web.app"
                 github="https://github.com/dzenis-h/iBookmark"
                 name="iBookmark 2.0"
-                description="Simple app for bookmarking your favourite websites. ✔"
+                description={iBookmark_1}
               />
             </div>
             <div className="item">
@@ -336,7 +373,7 @@ const Work = () => {
                 mainLink="https://dzenis-h.github.io/iZEN"
                 github="https://github.com/dzenis-h/iZEN"
                 name="iZEN"
-                description="Nice relaxing sounds & visuals to help you calm down 🧘‍"
+                description={iZEN_1}
               />
             </div>
             <div className="item">
@@ -352,7 +389,7 @@ const Work = () => {
                 mainLink="https://espro-coffee.web.app/"
                 github="https://github.com/dzenis-h/espro"
                 name="Espro"
-                description="A web app made for a local coffee shop. ☕"
+                description={Espro_1}
               />
             </div>
             <div className="item">
@@ -368,7 +405,7 @@ const Work = () => {
                 mainLink="https://hub-finder.web.app/"
                 github="https://github.com/dzenis-h/Hub_Finder"
                 name="HubFinder"
-                description="React app that uses the GitHub API to find details about its users. 🔎"
+                description={HubFinder_1}
               />
             </div>
             <div className="item">
@@ -384,7 +421,7 @@ const Work = () => {
                 mainLink="https://data-search.vercel.app/"
                 github="https://github.com/dzenis-h/dataSearch"
                 name="Data Search"
-                description="Search users info by name, surname or company 👀"
+                description={DataSearch_1}
               />
             </div>
             <div className="item">
@@ -400,24 +437,7 @@ const Work = () => {
                 mainLink="https://reactive-feeds.web.app"
                 github="https://github.com/dzenis-h/Reactive-RSS"
                 name="Reactive RSS"
-                description="Great way to add, save, edit, delete, follow your RSS feeds 📰"
-              />
-            </div>
-
-            <div className="item">
-              <Suspense fallback={<div className="loader"></div>}>
-                <ImageComponent
-                  webp={ReactiveRSS_17}
-                  jpg={ReactiveRSS}
-                  title="Reactive RSS"
-                />
-              </Suspense>
-
-              <WrokTemplate
-                mainLink="https://mybooks-2.web.app"
-                github="https://github.com/dzenis-h/myBooks"
-                name="Reactive RSS"
-                description="Great way to add, save, edit, delete, follow your RSS feeds 📰"
+                description={ReactiveRSS_1}
               />
             </div>
 
@@ -434,7 +454,7 @@ const Work = () => {
                 mainLink="https://balkan-recipes.firebaseapp.com/"
                 github="https://github.com/dzenis-h/Balkan_Recipe_Book"
                 name="Balkan Recipes"
-                description="Collect recipes and organize your shopping list 🥗"
+                description={BalkanRecipes_1}
               />
             </div>
             <div className="item">
@@ -450,9 +470,10 @@ const Work = () => {
                 mainLink="https://client-panel-2019.firebaseapp.com/"
                 github="https://github.com/dzenis-h/client-panel"
                 name="Client Panel"
-                description=" Add clients, check/ change their balances, etc. 💶"
+                description={ClientPanel_1}
               />
             </div>
+
             <div className="item">
               <Suspense fallback={<div className="loader"></div>}>
                 <ImageComponent
@@ -466,7 +487,7 @@ const Work = () => {
                 mainLink="https://web-calorie-tracker.firebaseapp.com/"
                 github="https://github.com/dzenis-h/Calorie_Tracker"
                 name="Calorie Tracker"
-                description="Track your calories and save data into LS 🍏"
+                description={CalorieTracker_1}
               />
             </div>
             <div className="item">
@@ -482,7 +503,7 @@ const Work = () => {
                 mainLink="https://reactive-movies.firebaseapp.com/"
                 github="https://github.com/dzenis-h/reactive-movies"
                 name="Reactive Movie DB"
-                description="A fast and beautiful web app that uses the TMDb API 🎬"
+                description={ReactiveMovies_1}
               />
             </div>
 
@@ -499,7 +520,7 @@ const Work = () => {
                 mainLink="https://nexter-homes.web.app"
                 github="https://github.com/dzenis-h/nexter"
                 name="Nexter website"
-                description="A prototype for a real estate agency 🏡"
+                description={Nexter_1}
               />
             </div>
 
@@ -516,7 +537,7 @@ const Work = () => {
                 mainLink="https://evolwe-2022.web.app/"
                 github="https://github.com/dzenis-h/evolWE"
                 name="evolWe 2.0"
-                description="A prototype of a landing page made for a client ☮"
+                description={evolWE1_1}
               />
             </div>
 
@@ -533,7 +554,7 @@ const Work = () => {
                 mainLink="https://hotel-xo.web.app"
                 github="https://github.com/dzenis-h/hotel-xo"
                 name="Hotel XO"
-                description="A prototype website made for a Hotel 🏨"
+                description={HotelXO_1}
               />
             </div>
 
@@ -546,7 +567,7 @@ const Work = () => {
                 mainLink="https://evolwe-landing-page.web.app"
                 github="https://github.com/dzenis-h/Evolwe-Prototype"
                 name="evolWE v1.0"
-                description="A prototype of a landing page made for a client 👨‍💻"
+                description={evolWe2_1}
               />
             </div>
 
@@ -555,7 +576,7 @@ const Work = () => {
                 <ImageComponent
                   webp={BiggaPublishing_29}
                   jpg={BiggaPublishing}
-                  title="reactive_movies"
+                  title="Bigga Publishing"
                 />
               </Suspense>
 
@@ -563,7 +584,7 @@ const Work = () => {
                 mainLink="https://bigga-publishing-2.web.app"
                 github="https://github.com/dzenis-h/bigga-publishing"
                 name="Bigga Publishing"
-                description="Prototype of a Landing Page"
+                description={BiggaPublishing_1}
               />
             </div>
 
@@ -580,7 +601,7 @@ const Work = () => {
                 mainLink="https://prototype-portfolio-1.web.app/"
                 github="https://github.com/dzenis-h/prototype-portfolio"
                 name="Portfolio prototype"
-                description="A prototype of a portfolio website. 🖥 💻"
+                description={PortfolioPrototype_1}
               />
             </div>
 
@@ -597,7 +618,7 @@ const Work = () => {
                 mainLink="https://contact-reactive.herokuapp.com"
                 github="https://github.com/dzenis-h/Reactive-Contacts/tree/master"
                 name="Reactive Contacts"
-                description="Add, remove, manipulate, and filter contacts. 📞"
+                description={ReactiveContacts_1}
               />
             </div>
 
@@ -614,7 +635,7 @@ const Work = () => {
                 mainLink="https://space-x.herokuapp.com"
                 github="https://github.com/dzenis-h/spaceX-launches"
                 name="SpaceX Launcher"
-                description="An app that interacts with the official SpaceX API 🚀"
+                description={SpaceXLauncher_1}
               />
             </div>
 

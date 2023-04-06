@@ -1,6 +1,8 @@
 .dark-mode-toggle {
   display: flex;
   margin: 0 auto;
+  position: absolute;
+  top: 2.2rem;
 }
 .dark-mode-toggle > button {
   font-size: 1.2em;

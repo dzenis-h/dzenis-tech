@@ -1,7 +1,11 @@
-import React from "react";
+import React, { useContext } from "react";
+import { LangContext } from "../../assets/locales/LangContext";
+import { obj } from "../../assets/locales/words";
 
 const WrokTemplate = ({ mainLink, github, name, description }) => {
   const darkMode = localStorage.getItem("dark");
+  const { lang } = useContext(LangContext);
+  const { live } = obj[lang];
   return (
     <>
       <a
@@ -13,7 +17,7 @@ const WrokTemplate = ({ mainLink, github, name, description }) => {
         }
         aria-label="Link for the deployed app"
       >
-        <i className="fas fa-eye" /> Live preview
+        <i className="fas fa-eye" /> {live}
       </a>
       <a
         href={github}

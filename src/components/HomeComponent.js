@@ -1,14 +1,7 @@
 import React, { useEffect, useContext } from "react";
-
+import Navbar from "../components/layout/Navbar";
 import { LangContext } from "../assets/locales/LangContext";
 import { obj } from "../assets/locales/words";
-
-// import CV from "../assets/documents/Performance Profile.pdf";
-
-import IconButton from "@material-ui/core/IconButton";
-// import Typography from "@material-ui/core/Typography";
-import MenuItem from "@material-ui/core/MenuItem";
-import Select from "@material-ui/core/Select";
 
 const Home = (props) => {
   setTimeout(() => {
@@ -25,27 +18,13 @@ const Home = (props) => {
     document.title = "Home"; // making the document title dynamic
   }, []);
 
-  const { lang, changeLang } = useContext(LangContext);
+  const { lang } = useContext(LangContext);
   const { position } = obj[lang];
 
   return (
     <>
       <main id="home">
-        <Select value={lang} onChange={changeLang} className="lang">
-          <MenuItem value="english">English</MenuItem>
-          <MenuItem value="bosnian">Bosnian</MenuItem>
-        </Select>
-        <IconButton color="inherit" style={{ cursor: "none" }}>
-          {lang === "english" ? (
-            <span role="img" aria-label="Language">
-              🇺🇸
-            </span>
-          ) : (
-            <span role="img" aria-label="Language">
-              🇧🇦
-            </span>
-          )}
-        </IconButton>
+        <Navbar />
 
         <div className="particles">
           <div className="parts"></div>
@@ -89,10 +68,6 @@ const Home = (props) => {
           >
             <i className="fab fa-linkedin-in fa-2x" />
           </a>
-          {/* <a href={CV} download="Dzenis-H" className="cv">
-            <i className="fas fa-cloud-download-alt fa-2x" />
-            <span className="dox">{profile} </span>
-          </a> */}
         </div>
       </main>
     </>

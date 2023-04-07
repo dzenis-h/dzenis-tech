@@ -123,6 +123,11 @@ export const obj = {
     PhoneNumber: "Phone Number",
     Message: "Message",
     SUBMIT: "SUBMIT",
+
+    about_1: "About",
+    about_2: "Me",
+    work_1: "My",
+    work_2: "Work",
   },
 
   bosnian: {
@@ -265,5 +270,10 @@ export const obj = {
     Message: "Poruka",
     osoba: "Vase Ime",
     SUBMIT: "Posalji",
+
+    about_1: "O",
+    about_2: "Meni",
+    work_1: "Moj",
+    work_2: "Rad",
   },
 };

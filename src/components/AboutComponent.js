@@ -95,6 +95,9 @@ const About = () => {
     ai,
     family,
     snapshot,
+
+    about_1,
+    about_2,
   } = obj[lang];
 
   return (
@@ -114,7 +117,7 @@ const About = () => {
                 darkMode === "true" ? "white specialColor" : " heading-about"
               }
             >
-              About
+              {about_1}
             </span>
             <i
               className={
@@ -124,7 +127,7 @@ const About = () => {
               }
             >
               {" "}
-              Me
+              {about_2}
             </i>{" "}
           </h1>
           <h2 className="sm-heading">{snapshot}</h2>

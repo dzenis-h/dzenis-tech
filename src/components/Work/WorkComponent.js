@@ -126,6 +126,8 @@ const Work = () => {
     PortfolioPrototype_1,
     ReactiveContacts_1,
     SpaceXLauncher_1,
+    work_1,
+    work_2,
   } = obj[lang];
 
   return (
@@ -141,7 +143,7 @@ const Work = () => {
           <Toggle toggleTheme={themeState} theme={themeState.dark}></Toggle>{" "}
           <h1 className="lg-heading textShadow">
             <span className={darkMode === "true" ? "white" : "heading-about"}>
-              My
+              {work_1}
             </span>
             <i
               className={
@@ -151,7 +153,7 @@ const Work = () => {
               }
             >
               {" "}
-              Work
+              {work_2}
             </i>
           </h1>
           {/* <ModalVideo

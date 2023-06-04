@@ -18,7 +18,7 @@ import { Wrapper } from "../darkMode/Wrapper";
 // import HighlightedList from "./Highlighted/HighlightedList";
 
 import {
-  // BiggaFileUploads_2,
+  BiggaFileUploads_2,
   CalorieTracker_3,
   ClientPanel_4,
   // Dev_Spot_5,
@@ -46,7 +46,7 @@ import {
   ReactiveOrders,
   //  =====================
   BalkanRecipes,
-  // BiggaFileUploads,
+  BiggaFileUploads,
   CalorieTracker,
   ClientPanel,
   // Dev_Spot,
@@ -98,6 +98,7 @@ const Work = () => {
   const darkMode = localStorage.getItem("dark");
   const { lang } = useContext(LangContext);
   const {
+    Bigga_Exchange_1,
     miniStories_1,
     TheMERNShop_1,
     idea_X_1,
@@ -193,6 +194,36 @@ const Work = () => {
 
             <div className="item">
               <Suspense fallback={<div className="loader"></div>}>
+                <ImageComponent webp={idea_X_9} jpg={idea_X} title="idea_x" />
+              </Suspense>
+
+              <WrokTemplate
+                mainLink="https://idea-x.onrender.com"
+                github="https://github.com/dzenis-h/IDEA_x"
+                name="idea_X"
+                description={idea_X_1}
+              />
+            </div>
+
+            <div className="item">
+              <Suspense fallback={<div className="loader"></div>}>
+                <ImageComponent
+                  webp={BiggaFileUploads_2}
+                  jpg={BiggaFileUploads}
+                  title="Bigga Exchange"
+                />
+              </Suspense>
+
+              <WrokTemplate
+                mainLink="https://bigga-exchange.onrender.com"
+                github="https://github.com/dzenis-h/Bigga-Exchange"
+                name="miniStories"
+                description={Bigga_Exchange_1}
+              />
+            </div>
+
+            <div className="item">
+              <Suspense fallback={<div className="loader"></div>}>
                 <ImageComponent
                   webp={miniStories_13}
                   jpg={miniStories}
@@ -222,19 +253,6 @@ const Work = () => {
                 github="https://github.com/dzenis-h/MERN_Shop"
                 name="The MERN Shop"
                 description={TheMERNShop_1}
-              />
-            </div>
-
-            <div className="item">
-              <Suspense fallback={<div className="loader"></div>}>
-                <ImageComponent webp={idea_X_9} jpg={idea_X} title="idea_x" />
-              </Suspense>
-
-              <WrokTemplate
-                mainLink="https://idea-x.herokuapp.com"
-                github="https://github.com/dzenis-h/IDEA_x"
-                name="idea_X"
-                description={idea_X_1}
               />
             </div>
 

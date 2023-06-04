@@ -72,6 +72,7 @@ export const obj = {
     live: "Live preview",
 
     // P R O J E K T I:
+    Bigga_Exchange_1: "Great little app for exchanging files in a quick manner 🔀 📂",
     miniStories_1: "A mini social network site with many extras 📗",
     TheMERNShop_1: "eCommerce project built using the MERN stack 💲 🖥",
     idea_X_1: "Save ideas for your next coding project 💡",
@@ -207,17 +208,17 @@ export const obj = {
     live: "Prikaz uzivo",
 
     // P R O J E K T I:
-
+    Bigga_Exchange_1: "Odlicni mali app za brzu razmjenu raznoliki podataka 📂 🔀",
     miniStories_1: "Mini drustvena mreza s mnogo dodataka 📗",
     TheMERNShop_1: "Projekt e-trgovine izgrađen koristenjem MERN stacka 💲 🖥",
     idea_X_1: "Sacuvajte ideje za svoj sljedeci projekt kodiranja 💡",
-    NodeBookShop_1: "Prototip online trgovine za prodaju i kupnju knjiga 📚🛒",
+    NodeBookShop_1: "Prototip online trgovine za prodaju i kupnju knjiga 📚 🛒",
     ReactiveTube_1: "React-Redux aplikacija koja upotrebljava YouTube API 🎦",
     BalkanSportsStore_1:
       "Prototip aplikacije za e-trgovinu napravljen uz Angular 🏀",
     NotesX_1: "Notes app izgrađen s vanilla JS, HTML5, i CSS3",
     LoanCalculator_1:
-      "Procijenjena plaCanja za iznose kredita, kamate i uvjete 📊",
+      "Procijenjena placanja za iznose kredita, kamate i uvjete 📊",
     ImageSearch_1: "Prototip za pretrazivanje slika pomocu Unsplash API-ja. 📷",
     ReactiveOrders_1:
       "Prototip aplikacije za narucivanje obroka napravljen s Reactom. 🥗",

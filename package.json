@@ -3,10 +3,10 @@
   "author": {
     "name": "Dzenis H.",
     "email": "dzenis.hankusic@gmail.com",
-    "url": "https://dzenis-h-portfolio.web.app"
+    "url": "https://dzenis.tech"
   },
   "version": "2.0.0",
-  "homepage": "https://dzenis-h.com",
+  "homepage": "https://idea-x.onrender.com",
   "description": "A peronal portfolio site build with the help of React and its usual friends :)",
   "private": true,
   "dependencies": {
@@ -39,8 +39,8 @@
     "react-modal-video": "^1.2.3"
   },
   "scripts": {
-    "start": "react-scripts start",
-    "build": "react-scripts build",
+    "start": "react-scripts --openssl-legacy-provider start",
+    "build": "react-scripts --openssl-legacy-provider build",
     "test": "react-scripts test",
     "eject": "react-scripts eject",
     "deploy:gh": "gh-pages -d build",

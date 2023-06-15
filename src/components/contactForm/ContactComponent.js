@@ -7,13 +7,14 @@ import Navbar from "../../components/layout/Navbar";
 import { LangContext } from "../../assets/locales/LangContext";
 import { obj } from "../../assets/locales/words";
 
-import SideLink from "./SideLink";
 import InputField from "./InputField";
 
 import Toggle from "../darkMode/ToggleContainer";
 import { useTheme } from "../darkMode/useTheme";
 import { Wrapper } from "../darkMode/Wrapper";
 import "animate.css";
+
+import Demo from "../../assets/social/Demo";
 
 const Contact = () => {
   const initialState = {
@@ -32,12 +33,7 @@ const Contact = () => {
   const {
     ime_1,
     ime_2,
-    podnaslov,
     info_3,
-    linkedin,
-    mail,
-    telefon,
-    skype,
     Obavezno,
     Company,
     Opcijonalo,
@@ -45,7 +41,7 @@ const Contact = () => {
     PhoneNumber,
     Message,
     SUBMIT,
-    osoba
+    osoba,
   } = obj[lang];
 
   useEffect(() => {
@@ -133,45 +129,9 @@ const Contact = () => {
         <div className="contact-container">
           <div className="wrapper animate__animated bounceInLeft">
             <div className="company-info">
-              <h2
-                className={
-                  darkMode === "true" ? "company-info-reverse lead" : "lead"
-                }
-                style={{fontSize: "1.22rem", marginBottom: '1.5rem'}}
-              >
-                {podnaslov}
-              </h2>
-              <small className="post-title" style={{ color: "firebrick" }}>
-                {info_3}
-              </small>
-              <ul className="contact-list">
-                <SideLink
-                  link="https://www.linkedin.com/in/dzenis-h"
-                  linkAlt="LinkedIn field"
-                  icon="fab fa-linkedin-in"
-                  text={linkedin}
-                />
-                <SideLink
-                  link="mailto:dzenis.hankusic@gmail.com"
-                  linkAlt="Email field"
-                  icon="fas fa-at"
-                  text={mail}
-                />
-                <SideLink
-                  link="tel:00387644543006"
-                  linkAlt="Phone number field"
-                  icon="fas fa-mobile-alt"
-                  text={telefon}
-                />
-                <SideLink
-                  link="skype:dzenis.hankusic?call"
-                  linkAlt="Skype field"
-                  icon="fab fa-skype"
-                  text={skype}
-                />
-              </ul>
+              {" "}
+              <Demo />
             </div>
-
             {/* CONTACT FORM */}
             <div className="contact" style={{ backgroundColor: "#252525" }}>
               <h1 className="contact-heading">

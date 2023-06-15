@@ -21,7 +21,7 @@ import {
   BiggaFileUploads_2,
   CalorieTracker_3,
   ClientPanel_4,
-  // Dev_Spot_5,
+  Dev_Spot_5,
   Espro_27,
   evolWe1_7,
   evolWe2_6,
@@ -34,7 +34,7 @@ import {
   miniStories_13,
   NexterWebsite_14,
   NodeBookShop_15,
-  //  ReactiveBurger_25,
+  ReactiveBurger_25,
   ReactiveContacts_24,
   ReactiveMovieDB_16,
   ReactiveRSS_17,
@@ -49,7 +49,7 @@ import {
   BiggaFileUploads,
   CalorieTracker,
   ClientPanel,
-  // Dev_Spot,
+  Dev_Spot,
   Espro,
   evolWe1,
   evolWe2,
@@ -61,7 +61,7 @@ import {
   miniStories,
   NexterWebsite,
   NodeBookShop,
-  // ReactiveBurger,
+  ReactiveBurger,
   ReactiveContacts,
   ReactiveMovieDB,
   ReactiveRSS,
@@ -83,6 +83,8 @@ import {
   DataSearch_31,
   NoteAPP,
   NoteAPP_32,
+  digitalCV_33,
+  digitalCV,
 } from "../helper/imageIndex";
 
 const ImageComponent = React.lazy(() => import("../helper/ImageComponent"));
@@ -98,6 +100,7 @@ const Work = () => {
   const darkMode = localStorage.getItem("dark");
   const { lang } = useContext(LangContext);
   const {
+    Dev_Spot_1,
     Bigga_Exchange_1,
     miniStories_1,
     TheMERNShop_1,
@@ -127,8 +130,10 @@ const Work = () => {
     PortfolioPrototype_1,
     ReactiveContacts_1,
     SpaceXLauncher_1,
+    Reactive_Burger_1,
     work_1,
     work_2,
+    digitalCV_1,
   } = obj[lang];
 
   return (
@@ -175,22 +180,22 @@ const Work = () => {
             {" "}
           </b>
           <div className="projects">
-            {/* <div className="item">
+            <div className="item">
               <Suspense fallback={<div className="loader"></div>}>
                 <ImageComponent
                   webp={Dev_Spot_5}
                   jpg={Dev_Spot}
-                  title="It's a full stack app that uses a enormous tech stack -> My little versoion of SO :)"
+                  title="It's a full-stack app that uses a enormous tech stack -> My little versoion of SO :)"
                 />
               </Suspense>
 
               <WrokTemplate
-                mainLink="https://dev--spot.herokuapp.com/"
-                github="https://github.com/dzenis-h/devSpot"
+                mainLink="https://dev-spot.onrender.com"
+                github="https://github.com/dzenis-h/Dev_Spot"
                 name="Dev_Spot"
-                description="It's a social network for developers 💻"
+                description={Dev_Spot_1}
               />
-            </div> */}
+            </div>
 
             <div className="item">
               <Suspense fallback={<div className="loader"></div>}>
@@ -217,7 +222,7 @@ const Work = () => {
               <WrokTemplate
                 mainLink="https://bigga-exchange.onrender.com"
                 github="https://github.com/dzenis-h/Bigga-Exchange"
-                name="miniStories"
+                name="Bigga Exchange"
                 description={Bigga_Exchange_1}
               />
             </div>
@@ -232,27 +237,10 @@ const Work = () => {
               </Suspense>
 
               <WrokTemplate
-                mainLink="https://mini-stories.herokuapp.com"
-                github="https://github.com/dzenis-h/mini-stories"
+                mainLink="https://ministories.onrender.com"
+                github="https://github.com/dzenis-h/Stories"
                 name="miniStories"
                 description={miniStories_1}
-              />
-            </div>
-
-            <div className="item">
-              <Suspense fallback={<div className="loader"></div>}>
-                <ImageComponent
-                  webp={TheMERNShop_21}
-                  jpg={TheMERNShop}
-                  title="The MERN Shop"
-                />
-              </Suspense>
-
-              <WrokTemplate
-                mainLink="https://mern-shop.herokuapp.com"
-                github="https://github.com/dzenis-h/MERN_Shop"
-                name="The MERN Shop"
-                description={TheMERNShop_1}
               />
             </div>
 
@@ -266,10 +254,27 @@ const Work = () => {
               </Suspense>
 
               <WrokTemplate
-                mainLink="https://node-books.herokuapp.com"
+                mainLink="https://nodebooks.onrender.com"
                 github="https://github.com/dzenis-h/node-book-shop-2.0"
                 name="Node Book Shop"
                 description={NodeBookShop_1}
+              />
+            </div>
+
+            <div className="item">
+              <Suspense fallback={<div className="loader"></div>}>
+                <ImageComponent
+                  webp={TheMERNShop_21}
+                  jpg={TheMERNShop}
+                  title="The MERN Shop"
+                />
+              </Suspense>
+
+              <WrokTemplate
+                mainLink="https://the-mern-shop.onrender.com"
+                github="https://github.com/dzenis-h/The-MERN-Shop"
+                name="The MERN Shop"
+                description={TheMERNShop_1}
               />
             </div>
 
@@ -635,8 +640,8 @@ const Work = () => {
               </Suspense>
 
               <WrokTemplate
-                mainLink="https://contact-reactive.herokuapp.com"
-                github="https://github.com/dzenis-h/Reactive-Contacts/tree/master"
+                mainLink="https://reactive-contacts.onrender.com"
+                github="https://github.com/dzenis-h/Reactive-Contacts__full-stack"
                 name="Reactive Contacts"
                 description={ReactiveContacts_1}
               />
@@ -652,10 +657,44 @@ const Work = () => {
               </Suspense>
 
               <WrokTemplate
-                mainLink="https://space-x.herokuapp.com"
+                mainLink="https://spacex-stats.onrender.com"
                 github="https://github.com/dzenis-h/spaceX-launches"
                 name="SpaceX Launcher"
                 description={SpaceXLauncher_1}
+              />
+            </div>
+
+            <div className="item">
+              <Suspense fallback={<div className="loader"></div>}>
+                <ImageComponent
+                  webp={ReactiveBurger_25}
+                  jpg={ReactiveBurger}
+                  title="Create a burger you like, order it, enjoy 🍔"
+                />
+              </Suspense>
+
+              <WrokTemplate
+                mainLink="https://reactive-hamburger.web.app"
+                github="https://github.com/dzenis-h/Reactive-Burger"
+                name="Reactive Burger"
+                description={Reactive_Burger_1}
+              />
+            </div>
+
+            <div className="item">
+              <Suspense fallback={<div className="loader"></div>}>
+                <ImageComponent
+                  webp={digitalCV_33}
+                  jpg={digitalCV}
+                  title="Spremene prototype portfolio websi6e"
+                />
+              </Suspense>
+
+              <WrokTemplate
+                mainLink="https://dzenis-h.github.io/Portfolio-Prototype"
+                github="https://github.com/dzenis-h/Portfolio-Prototype"
+                name="digitalCV"
+                description={digitalCV_1}
               />
             </div>
 

@@ -12,7 +12,7 @@ export const iZEN_10 = require("../../assets/img/projects/iZEN_13.webp");
 export const LoanCalculator2_11 = require("../../assets/img/projects/LoanCalculator2_14.webp");
 export const MarsEMS_12 = require("../../assets/img/projects/MarsEMS_15.webp");
 export const miniStories_13 = require("../../assets/img/projects/miniStories_16.webp");
-export const NexterWebsite_14 = require("../../assets/img/projects/NexterWebsite_17.webp"); 
+export const NexterWebsite_14 = require("../../assets/img/projects/NexterWebsite_17.webp");
 export const NodeBookShop_15 = require("../../assets/img/projects/NodeBookShop_18.webp");
 export const ReactiveMovieDB_16 = require("../../assets/img/projects/ReactiveMovieDB_21.webp");
 export const ReactiveRSS_17 = require("../../assets/img/projects/ReactiveRSS_22.webp");
@@ -31,6 +31,7 @@ export const iBookMark_30 = require("../../assets/img/projects/iBookMark_27.webp
 export const DataSearch_31 = require("../../assets/img/projects/DataSearch_31.webp");
 export const BiggaPublishing_29 = require("../../assets/img/projects/BiggaPublishing_29.webp");
 export const NoteAPP_32 = require("../../assets/img/projects/NoteAPP_32.webp");
+export const digitalCV_33 = require("../../assets/img/projects/digitalCV_33.webp");
 
 // // BACKUP IMAGES FOR OLDER BROWSER
 export const BalkanRecipes = require("../../assets/backup/BalkanRecipes.jpg");
@@ -65,3 +66,4 @@ export const iBookMark = require("../../assets/backup/iBookMark.jpg");
 export const DataSearch = require("../../assets/backup/DataSearch.jpg");
 export const BiggaPublishing = require("../../assets/backup/BiggaPublishing.jpg");
 export const NoteAPP = require("../../assets/backup/NoteAPP.jpg");
+export const digitalCV = require("../../assets/backup/digitalCV.jpg");

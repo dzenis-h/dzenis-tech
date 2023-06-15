@@ -474,8 +474,8 @@ const About = () => {
                 </span>
                 <span className="custom-text ">
                   {" "}
-                  Heroku, Firebase, Netlify, App Engine, Vercel, GH Pages, AWS,
-                  Google Cloud.
+                  Render, Heroku, Firebase, Netlify, App Engine, Vercel, GH
+                  Pages, AWS, Google Cloud.
                 </span>
               </h4>
               <h4 className={darkMode === "true" ? "black" : "white"}>

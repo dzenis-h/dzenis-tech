@@ -68,11 +68,14 @@ export const obj = {
     family: "Spending quality family time.",
     headline:
       "I develop software every day. Below is a shortened and adapted list of my projects/prototypes: ",
-    note: "Note ➖ Some apps may take longer to load simply because they were deployed using a 'FREE TIER' account. Thank you for understanding. I'm in the process of finalizing multiple projects, so more apps will be added soon.",
+    note: "Note ➖ Some apps may take longer to load simply because they were deployed using a 'FREE TIER' account. Please be patient. Thank you for understanding. I'm in the process of finalizing multiple projects, so more apps will be added soon.",
     live: "Live preview",
 
     // P R O J E K T I:
-    Bigga_Exchange_1: "Great little app for exchanging files in a quick manner 🔀 📂",
+    Dev_Spot_1:
+      "Create a profile, add your info, showcase yourself, check out other profiles, ask for help",
+    Bigga_Exchange_1:
+      "Great little app for exchanging files in a quick manner 🔀 📂",
     miniStories_1: "A mini social network site with many extras 📗",
     TheMERNShop_1: "eCommerce project built using the MERN stack 💲 🖥",
     idea_X_1: "Save ideas for your next coding project 💡",
@@ -105,11 +108,12 @@ export const obj = {
     PortfolioPrototype_1: "A prototype of a portfolio website. 🖥 💻",
     ReactiveContacts_1: "Add, remove, manipulate, and filter contacts. 📞",
     SpaceXLauncher_1: "An app that interacts with the official SpaceX API 🚀",
+    Reactive_Burger_1:
+      "Create a profile, build the burger you like, order it, enjoy 🍔",
+    digitalCV_1: "Supreme prototype portfolio website 👨🏻‍💻",
 
     ime_1: "Contact",
     ime_2: "Form",
-    podnaslov:
-      "For any queries please contact me using this form or by other provided contact info.",
     info_2: "Additional info:",
     info_3: "For convenience, the contact info is clickable.",
     linkedin: "Find me on LinkedIn",
@@ -204,11 +208,14 @@ export const obj = {
 
     headline:
       "Svaki dan razvijam softver. Ispod je skraceni i prilagodeni popis mojih projekata/prototipova:",
-    note: "Napomena ➖ Nekim aplikacijama moze trebati dulje da se ucitaju samo zato sto su postavljene pomocu racuna 'FREE TIER'. Hvala na razumijevanju. U procesu sam finalizacije vise projekata, tako da ce uskoro biti dodano vise aplikacija.",
+    note: "Napomena ➖ Nekim aplikacijama moze trebati dulje da se ucitaju samo zato sto su postavljene pomocu racuna 'FREE TIER'. Molim Vas za strpljene. Hvala na razumijevanju. U procesu sam finalizacije vise projekata, tako da ce uskoro biti dodano vise aplikacija.",
     live: "Prikaz uzivo",
 
     // P R O J E K T I:
-    Bigga_Exchange_1: "Odlicni mali app za brzu razmjenu raznoliki podataka 📂 🔀",
+    Dev_Spot_1:
+      "Napravi profil, dodaj kvalifikacije, vidi druge profile, potrazi pomoc, itd.",
+    Bigga_Exchange_1:
+      "Odlicni mali app za brzu razmjenu raznoliki podataka 📂 🔀",
     miniStories_1: "Mini drustvena mreza s mnogo dodataka 📗",
     TheMERNShop_1: "Projekt e-trgovine izgrađen koristenjem MERN stacka 💲 🖥",
     idea_X_1: "Sacuvajte ideje za svoj sljedeci projekt kodiranja 💡",
@@ -250,10 +257,10 @@ export const obj = {
       "Dodajte, uklonite, manipulirajte i filtrirajte kontakte. 📞",
     SpaceXLauncher_1:
       "Aplikacija koja komunicira sa sluzbenim SpaceX API-jem 🚀",
+    Reactive_Burger_1: "Sastavi burger koji ti se svida, naruci, i uzivaj 🍔",
+    digitalCV_1: "Prototip superiorne portfiolio webstranice 👨🏻‍💻",
 
     ime: "Obrazac za kontakt",
-    podnaslov:
-      "Za sve upite slobodno me kontaktirajte putem ovog obrasca ili putem drugih navedenih kontakt podataka.",
     info_2: "Dodatne informacije:",
     info_3: "Radi prakticnosti, kontakt informacije se mogu kliknuti.",
     linkedin: "Pronadite me na LinkedIn-u",

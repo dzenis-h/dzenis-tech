@@ -184,7 +184,7 @@ const Contact = () => {
                   textarea
                   className="full"
                   label={Message}
-                  rows="5"
+                  rows="7"
                   name="message"
                   value={message}
                   onChange={handleChange}

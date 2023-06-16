@@ -75,9 +75,9 @@ const Demo = () => {
 
             <a
               href="img/assets/Dzenis-H.pdf"
-              download
               target="_blank"
               rel="noopener noreferrer"
+              download
             >
               <img src={CV} alt="Draft CV" />
             </a>

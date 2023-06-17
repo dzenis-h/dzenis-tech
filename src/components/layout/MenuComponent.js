@@ -71,11 +71,11 @@ const Menu = () => {
                     Work
                   </Link>
                 </li>
-                {/* <li className={navItems}>
-                  <Link to="/blog" className="nav-link" onClick={toggleMenu}>
+                <li className={navItems}>
+                  <Link to="/post" className="nav-link" onClick={toggleMenu}>
                     Blog
                   </Link>
-                </li> */}
+                </li>
                 <li className={navItems}>
                   <Link to="/contact" className="nav-link" onClick={toggleMenu}>
                     Contact

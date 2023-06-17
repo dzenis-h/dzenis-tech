@@ -193,7 +193,9 @@ const Contact = () => {
                   darkMode={darkMode}
                 />
                 <div className="full">
-                  <button type="submit">{SUBMIT}</button>
+                  <button type="submit" style={{ paddingTop: "1rem" }}>
+                    {SUBMIT}
+                  </button>
                 </div>
               </form>
             </div>

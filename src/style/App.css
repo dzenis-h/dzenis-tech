@@ -1330,6 +1330,10 @@ figure > img {
 div.blog-flex {
   display: flex !important;
   justify-content: space-between;
+  width: 100%;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
 }
 
 article.blog-article {

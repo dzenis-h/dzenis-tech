@@ -1,5 +1,5 @@
 import React from "react";
-
+import Resume from "../documents/Dzenis-H.pdf";
 import LI from "./linkedin.png";
 import GH from "./github.png";
 import SO from "./stack-overflow.png";
@@ -73,12 +73,7 @@ const Demo = () => {
               <img src={twitter} alt="Twitter" />
             </a>
 
-            <a
-              href="img/assets/Dzenis-H.pdf"
-              target="_blank"
-              rel="noopener noreferrer"
-              download
-            >
+            <a href={Resume} download="Dzneis H.pdf">
               <img src={CV} alt="Draft CV" />
             </a>
           </div>

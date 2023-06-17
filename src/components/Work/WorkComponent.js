@@ -411,7 +411,7 @@ const Work = () => {
               </Suspense>
 
               <WrokTemplate
-                mainLink="https://espro-coffee.web.app/"
+                mainLink="https://espro-coffee.web.app"
                 github="https://github.com/dzenis-h/espro"
                 name="Espro"
                 description={Espro_1}
@@ -476,8 +476,8 @@ const Work = () => {
               </Suspense>
 
               <WrokTemplate
-                mainLink="https://balkan-recipes.firebaseapp.com/"
-                github="https://github.com/dzenis-h/Balkan_Recipe_Book"
+                mainLink="https://balkan-recipes.web.app"
+                github="https://github.com/dzenis-h/ng-Recipes"
                 name="Balkan Recipes"
                 description={BalkanRecipes_1}
               />

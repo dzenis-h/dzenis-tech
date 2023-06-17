@@ -1,8 +1,8 @@
 import sanityClient from "@sanity/client";
 
 export default sanityClient({
-  projectId: "sienna-seal",
+  projectId: "beq9vr6s",
   dataset: "production",
-  apiVersion: "2021-08-31",
+  apiVersion: "2021-06-07",
   useCdn: true,
 });

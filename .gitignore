@@ -43,3 +43,10 @@ blog/node_modules
 node_modules
 
 build/
+.firebase/hosting.YnVpbGQ.cache
+blog/node_modules
+.tmp.driveupload
+.tmp.drivedownload
+blog/yarn.lock
+blog/yarn.lock
+.firebase/hosting.YnVpbGQ.cache

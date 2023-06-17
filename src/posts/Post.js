@@ -57,7 +57,7 @@ export default function Post() {
             <div className="blog-flex">
               {postData &&
                 postData.map((post, index) => (
-                  <article className="blog-article">
+                  <article className="blog-article" key={index}>
                     <Link
                       to={"/post/" + post.slug.current}
                       key={post.slug.current}
@@ -75,8 +75,8 @@ export default function Post() {
                         <h3
                           className={
                             darkMode === "true"
-                              ? "post-title-dark"
-                              : "custom-text"
+                              ? "custom-text"
+                              : "post-title-dark"
                           }
                         >
                           {post.title}

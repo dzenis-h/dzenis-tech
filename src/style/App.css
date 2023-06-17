@@ -100,9 +100,9 @@ svg.MuiSelect-icon {
 
 .teamwork {
   text-align: center;
-  font-fmily: cursive;
-  letterspacing: ".5rem";
-  argin-left: "1em";
+  font-family: cursive;
+  letter-spacing: ".5rem";
+  align-self: "1em";
 }
 
 .diff-text-2 {
@@ -1259,15 +1259,15 @@ textarea.reverse {
   border: 2px solid #b22222;
 }
 
-#arrow-left {
+/* #arrow-left {
   position: absolute;
-  margin-top: 50%;
+  margin-top: 12.5%;
 }
 #arrow-left-dark {
   position: absolute;
-  margin-top: 50%;
-  color: rgba(0, 0, 0, 0.55);
-}
+  margin-top: 12.5%;
+  color: rgba(0, 0, 0, 0.55); 
+}*/
 
 .back-btn {
   display: flex;

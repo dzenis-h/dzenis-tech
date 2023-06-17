@@ -46,26 +46,35 @@ export default function SinglePost() {
   return (
     <main
       id="single-post"
-      className={darkMode === "true" ? "dark-theme" : "white-theme"}
+      className={darkMode === "true" ? "black-theme" : "white-theme"}
     >
       <Toggle toggleTheme={themeState} theme={themeState.dark}></Toggle>
 
-      <Link to="/post">
-        <i
-          id={darkMode === "true" ? "arrow-left" : "arrow-left-dark"}
-          className="fas fa-arrow-left fa-2x redShaddow arrow-left"
-        >
-          <span className={darkMode === "true" ? "back-btn" : "back-btn-dark"}>
-            {" "}
-            Go back
-          </span>
-        </i>
-      </Link>
       <article className="">
         <div className="">
           <h1 className="blog-title work-heading-segments redShaddow">
             {singlePost.title}
           </h1>
+          <Link to="/post">
+            <span
+              className={darkMode === "true" ? "back-btn" : "back-btn-dark"}
+            >
+              {" "}
+            </span>{" "}
+            <i
+              id={darkMode === "true" ? "arrow-left" : "arrow-left-dark"}
+              className="fas fa-arrow-left fa-2x redShaddow arrow-left"
+              style={{
+                display: "flex",
+                justifyContent: "center",
+                marginBottom: "1rem",
+                fontSize: "1.25rem",
+              }}
+            >
+              {" "}
+              Go back
+            </i>
+          </Link>
           <img
             src={singlePost.mainImage.asset.url}
             alt={singlePost.title}
@@ -76,6 +85,8 @@ export default function SinglePost() {
                 : "single-post-image-dark"
             }
           />
+
+          <br />
         </div>
         <div className="">
           <BlockContent

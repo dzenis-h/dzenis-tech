@@ -50,3 +50,5 @@ blog/node_modules
 blog/yarn.lock
 blog/yarn.lock
 .firebase/hosting.YnVpbGQ.cache
+.firebaserc
+firebase.json

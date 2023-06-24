@@ -32,6 +32,8 @@ export const DataSearch_31 = require("../../assets/img/projects/DataSearch_31.we
 export const BiggaPublishing_29 = require("../../assets/img/projects/BiggaPublishing_29.webp");
 export const NoteAPP_32 = require("../../assets/img/projects/NoteAPP_32.webp");
 export const digitalCV_33 = require("../../assets/img/projects/digitalCV_33.webp");
+export const Stitch_Shop_88 = require("../../assets/img/projects/Stitch-Shop_88.webp");
+export const Text_Reader_99 = require("../../assets/img/projects/text-reader_99.webp");
 
 // // BACKUP IMAGES FOR OLDER BROWSER
 export const BalkanRecipes = require("../../assets/backup/BalkanRecipes.jpg");
@@ -67,3 +69,5 @@ export const DataSearch = require("../../assets/backup/DataSearch.jpg");
 export const BiggaPublishing = require("../../assets/backup/BiggaPublishing.jpg");
 export const NoteAPP = require("../../assets/backup/NoteAPP.jpg");
 export const digitalCV = require("../../assets/backup/digitalCV.jpg");
+export const StitchShop = require("../../assets/backup/Stitch-Shop.jpg");
+export const Text_Reader = require("../../assets/backup/text-reader.jpg");

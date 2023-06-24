@@ -1,6 +1,7 @@
 import React, { useContext } from "react";
 import { LangContext } from "../../../assets/locales/LangContext";
 import { obj } from "../../../assets/locales/words";
+import "../../../style/SirenStyle.css";
 
 const HighlightedHeader = () => {
   const darkMode = localStorage.getItem("dark");
@@ -29,7 +30,19 @@ const HighlightedHeader = () => {
         <span className="custom-text" aria-label="dash">
           <b className={darkMode === "true" ? "note__reverse" : "note"}></b>
         </span>
-        {note}
+        <div id="lightbar">
+          <div class="side">
+            <div class="light_two red"></div>
+            <div class="yellow_two"></div>
+          </div>{" "}
+          <div id="middle" style={{ padding: ".15rem", marginBottom: ".5rem" }}>
+            {note}
+          </div>
+          <div class="side">
+            <div class="light_two blue"></div>
+            <div class="yellow_two"></div>
+          </div>
+        </div>
       </p>
     </>
   );

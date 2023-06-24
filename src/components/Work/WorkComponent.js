@@ -28,6 +28,7 @@ import {
   HotelXO_8,
   HubFinder_22,
   idea_X_9,
+  StitchShop,
   //  ImageSearch_26,
   LoanCalculator2_11,
   // MarsEMS_12,
@@ -85,6 +86,9 @@ import {
   NoteAPP_32,
   digitalCV_33,
   digitalCV,
+  Stitch_Shop_88,
+  Text_Reader,
+  Text_Reader_99,
 } from "../helper/imageIndex";
 
 const ImageComponent = React.lazy(() => import("../helper/ImageComponent"));
@@ -134,6 +138,8 @@ const Work = () => {
     work_1,
     work_2,
     digitalCV_1,
+    stitch_shop_1,
+    text_reader_1,
   } = obj[lang];
 
   return (
@@ -686,7 +692,7 @@ const Work = () => {
                 <ImageComponent
                   webp={digitalCV_33}
                   jpg={digitalCV}
-                  title="Spremene prototype portfolio websi6e"
+                  title="Supreme prototype portfolio website"
                 />
               </Suspense>
 
@@ -695,6 +701,40 @@ const Work = () => {
                 github="https://github.com/dzenis-h/Portfolio-Prototype"
                 name="digitalCV"
                 description={digitalCV_1}
+              />
+            </div>
+
+            <div className="item">
+              <Suspense fallback={<div className="loader"></div>}>
+                <ImageComponent
+                  webp={Stitch_Shop_88}
+                  jpg={StitchShop}
+                  title="Stitch Shop"
+                />
+              </Suspense>
+
+              <WrokTemplate
+                mainLink="https://stitch-shop.onrender.com"
+                github="https://github.com/dzenis-h/stitch-shop"
+                name="Stitch Shop"
+                description={stitch_shop_1}
+              />
+            </div>
+
+            <div className="item">
+              <Suspense fallback={<div className="loader"></div>}>
+                <ImageComponent
+                  webp={Text_Reader_99}
+                  jpg={Text_Reader}
+                  title="Speech - Text Reader"
+                />
+              </Suspense>
+
+              <WrokTemplate
+                mainLink="https://text-reader-v2.onrender.com"
+                github="https://github.com/dzenis-h/text-reader"
+                name="Speech - Text Reader"
+                description={text_reader_1}
               />
             </div>
 

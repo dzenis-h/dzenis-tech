@@ -68,7 +68,7 @@ export const obj = {
     family: "Spending quality family time.",
     headline:
       "I develop software every day. Below is a shortened and adapted list of my projects/prototypes: ",
-    note: "Note ➖ Some apps may take longer to load simply because they were deployed using a 'FREE TIER' account. Please be patient. Thank you for understanding. I'm in the process of finalizing multiple projects, so more apps will be added soon.",
+    note: "IMPORTANT NOTE ➖ Some full-stack apps may take longer to load simply because they were deployed using a 'FREE TIER' account. Please be patient. Thank you in advance.",
     live: "Live preview",
 
     // P R O J E K T I:
@@ -111,6 +111,8 @@ export const obj = {
     Reactive_Burger_1:
       "Create a profile, build the burger you like, order it, enjoy 🍔",
     digitalCV_1: "Supreme prototype portfolio website 👨🏻‍💻",
+    stitch_shop_1: "It uses the Stitch serverless platform 🏪",
+    text_reader_1: "App  that converts text to speech 🅰 🔈",
 
     ime_1: "Contact",
     ime_2: "Form",
@@ -208,7 +210,7 @@ export const obj = {
 
     headline:
       "Svaki dan razvijam softver. Ispod je skraceni i prilagodeni popis mojih projekata/prototipova:",
-    note: "Napomena ➖ Nekim aplikacijama moze trebati dulje da se ucitaju samo zato sto su postavljene pomocu racuna 'FREE TIER'. Molim Vas za strpljene. Hvala na razumijevanju. U procesu sam finalizacije vise projekata, tako da ce uskoro biti dodano vise aplikacija.",
+    note: "VAZNA NAPOMENA ➖ Nekim aplikacijama moze trebati dulje da se ucitaju jer su postavljene pomocu 'FREE TIER' racuna. Molim za Vase strpljene. Unaprijed zahvalan.",
     live: "Prikaz uzivo",
 
     // P R O J E K T I:
@@ -259,6 +261,8 @@ export const obj = {
       "Aplikacija koja komunicira sa sluzbenim SpaceX API-jem 🚀",
     Reactive_Burger_1: "Sastavi burger koji ti se svida, naruci, i uzivaj 🍔",
     digitalCV_1: "Prototip superiorne portfiolio webstranice 👨🏻‍💻",
+    stitch_shop_1: "Napravljeno u ime ucenja Stitch serverless platforme 🏪",
+    text_reader_1: "App koji pretvara tekst u govor 🅰 🔈",
 
     ime: "Obrazac za kontakt",
     info_2: "Dodatne informacije:",

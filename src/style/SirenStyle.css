@@ -1,0 +1,81 @@
+/* Design by Dzenis H. */
+
+:root {
+  --red: rgb(227, 30, 51);
+  --blue: rgb(74, 83, 225);
+  --yellow: rgb(255, 255, 0);
+  --black: rgb(50, 50, 50);
+  --height: 50px;
+}
+
+#lightbar {
+  display: flex;
+  width: 99%;
+}
+.side {
+  height: var(--height);
+  border-radius: 5%S;
+}
+.light_two {
+  opacity: 0.25;
+  width: 150px;
+  height: calc(var(--height) - 5px);
+  border-radius: 7%;
+  animation: 0.5s infinite;
+}
+.red {
+  background: var(--red);
+  animation-name: flash-red;
+}
+@keyframes flash-red {
+  0% {
+    opacity: 1;
+    box-shadow: 0 0 25px var(--red);
+  }
+  12.5% {
+    opacity: 0.25;
+  }
+  25% {
+    opacity: 1;
+    box-shadow: 0 0 25px var(--red);
+  }
+  50% {
+    opacity: 0.25;
+  }
+}
+.blue {
+  background: var(--blue);
+  animation-name: flash-blue;
+}
+@keyframes flash-blue {
+  25% {
+    opacity: 1;
+    box-shadow: 0 0 25px var(--blue);
+  }
+  37.5% {
+    opacity: 0.25;
+  }
+  50% {
+    opacity: 1;
+    box-shadow: 0 0 25px var(--blue);
+  }
+  62.5% {
+    opacity: 0.25;
+  }
+}
+.yellow_two {
+  opacity: 1;
+  background: var(--yellow);
+  height: 5px;
+  width: 150px;
+  animation: strobe-yellow 0.5s alternate infinite;
+}
+@keyframes strobe-yellow {
+  0% {
+    opacity: 0.25;
+  }
+  100% {
+    opacity: 0.75;
+    box-shadow: 0 0 5px var(--yellow);
+  }
+}

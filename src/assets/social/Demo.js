@@ -32,7 +32,7 @@ const Demo = () => {
             </a>
 
             <a
-              href="tel:00387644543006"
+              href="tel:00387603207279"
               target="_blank"
               rel="noopener noreferrer"
             >

@@ -7,23 +7,23 @@ import { LangContext } from "../../assets/locales/LangContext";
 const Navbar = () => {
   const { lang, changeLang } = useContext(LangContext);
   return (
-    <>
+    <div className="lang-scope">
       <Select value={lang} onChange={changeLang} className="lang">
         <MenuItem value="english">English</MenuItem>
         <MenuItem value="bosnian">Bosanski</MenuItem>
       </Select>
-      <IconButton color="inherit" style={{ cursor: "none" }}>
+      <IconButton color="inherit" style={{ cursor: "none" }} id="flag">
         {lang === "english" ? (
-          <span role="img" aria-label="Language">
+          <span role="img" aria-label="Language" className="flag">
             🇺🇸
           </span>
         ) : (
-          <span role="img" aria-label="Language">
+          <span role="img" aria-label="Language" className="flag">
             🇧🇦
           </span>
         )}
       </IconButton>
-    </>
+    </div>
   );
 };
 

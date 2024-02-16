@@ -1366,3 +1366,27 @@ article.blog-article {
   justify-content: center;
   align-items: center;
 }
+
+@media only screen and (max-width: 600px) {
+  .header-note {
+    display: none;
+  }
+  .dark-mode-toggle {
+    font-size: 0.6rem;
+  }
+  .lang-scope {
+    display: inline-grid;
+    display: -moz-inline-grid;
+    display: -ms-inline-grid;
+  }
+  #flag {
+    padding: 0.2rem;
+  }
+  .menu .nav-link {
+    font-size: 1.35rem;
+  }
+  .menu-branding .portrait {
+    width: 180px;
+    height: 200px;
+  }
+}

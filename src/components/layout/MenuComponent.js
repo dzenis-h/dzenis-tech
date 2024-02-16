@@ -13,7 +13,7 @@ const Menu = () => {
     if (!showMenu) {
       localStorage.setItem("menu", "true");
       setShowMenu(true);
-      setMenuBtn("menu-btn close blob red");
+      setMenuBtn("menu-btn close blob");
       setMenu("menu show");
       setMenuNav("menu-nav show");
       setMenuBranding("menu-branding show");

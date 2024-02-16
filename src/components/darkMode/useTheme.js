@@ -7,7 +7,7 @@ const useTheme = () => useContext(ThemeContext);
 
 const useEffectDarkMode = () => {
   const [themeState, setThemeState] = useState({
-    dark: false,
+    dark: true,
     hasThemeMounted: false,
   });
 

@@ -4,9 +4,9 @@ import LI from "./linkedin.png";
 import GH from "./github.png";
 import SO from "./stack-overflow.png";
 import mail from "./email.png";
-import twitter from "./twitter.png";
 import Skype from "./skype.png";
 import phone from "./phone.png";
+import X from "./x.png";
 import CV from "./CV.png";
 
 const Demo = () => {
@@ -70,7 +70,7 @@ const Demo = () => {
               target="_blank"
               rel="noopener noreferrer"
             >
-              <img src={twitter} alt="Twitter" />
+              <img src={X} alt="X" width={80} height={80} />
             </a>
 
             <a href={Resume} download="Dzneis H.pdf">

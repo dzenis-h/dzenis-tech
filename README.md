@@ -18,8 +18,9 @@ The app is deployed on PlatformName. You can check it out here.
 
 ## License 📑
 
-This project is licensed under the terms of the MIT license. You can check out the full license here.
+This project is licensed under the terms of the MIT license. You can check out the full license [here](https://docs.google.com/document/d/11WK7tVoTFRMcWCuGZQCRWxEsDUEJ_6ArtfV-NjWcBCU/edit).
 
 ## Credits 👨🏻‍💻
 
-This repo was created by Dzenis H.
+This repo was created by [Dzenis]([URL](https://dzenis.tech/))
+

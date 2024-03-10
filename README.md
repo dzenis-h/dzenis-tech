@@ -1,10 +1,7 @@
-# !favicon App Name 💬
+# Portfolio  💬
 
 ## Overview 👀
-
-This is a brief description of the app. It combines the information from the "About" section of the GitHub page and the package.json file. 
-
-!App Screenshot
+Our new advanced Employee Management System [EMS] for Accounting and HR goes beyond the basics. Powered by the MERN+ stack, including TypeScript and more, it brings a cutting-edge blend of MongoDB, Express.js, React, Node.js, and additional technologies. 🚀 📊 📉 📆
 
 ## Contributing 🤝
 
@@ -25,4 +22,4 @@ This project is licensed under the terms of the MIT license. You can check out t
 
 ## Credits 👨🏻‍💻
 
-This repo was created by [Dzenis H
+This repo was created by Dzenis H.

@@ -22,5 +22,5 @@ This project is licensed under the terms of the MIT license. You can check out t
 
 ## Credits 👨🏻‍💻
 
-This repo was created by [Dzenis]([URL](https://dzenis.tech/)
+This repo was created by [Dzenis H.](https://dzenis.tech/)
 
